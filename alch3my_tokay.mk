@@ -4,8 +4,18 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit some common stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some Alch3myOS stuff
+$(call inherit-product, vendor/alch3my/config/common_full_phone.mk)
+
+# Alch3myOS flags
+WITH_GMS := true
+ALCH3MY_BUILD_TYPE := B3TA
+IS_PIXEL := true
+TARGET_HAS_UDFPS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_SUPPORTS_GFU := true
+TARGET_DOES_NOT_SUPPORT_GOOGLE_BATTERY := false
 
 # Inherit device configuration
 DEVICE_CODENAME := tokay
@@ -14,7 +24,7 @@ VENDOR_PATH := vendor/google/tokay
 $(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
 
 # Device identifier. This must come after all inclusions
-PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
+PRODUCT_NAME := alch3my_$(DEVICE_CODENAME)
 PRODUCT_SYSTEM_BRAND := google
 PRODUCT_SYSTEM_MANUFACTURER := Google
 PRODUCT_SYSTEM_NAME := generic_system_google
