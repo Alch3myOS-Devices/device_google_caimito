@@ -4,6 +4,30 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+	<bool name="config_tether_bridge_enabled">false</bool>
+    <bool name="config_wifiSoftap24gSupported">true</bool>
+    <bool name="config_wifiSoftap5gSupported">true</bool>
+    <bool name="config_wifiSoftap6gSupported">true</bool>
+    <bool name="config_wifiSoftapWpa3SaeSupported">true</bool>
+    <bool translatable="false" name ="config_wifi5ghzSupport">true</bool>
+    <bool translatable="false" name ="config_wifi6ghzSupport">true</bool>
+    <!--<bool translatable="false" name ="config_wifi60ghzSupport">true</bool> -->
+    <bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool>
+    <bool translatable="false" name="config_wifi_background_scan_support">true</bool>
+    <bool translatable="false" name ="config_wifiSoftapAutoUpgradeToBridgedConfigWhenSupported">false</bool>
+    <bool translatable="false" name="config_wifi_softap_acs_supported">true</bool>
+    <bool translatable="false" name="config_wifi_softap_sae_supported">true</bool>
+    <bool translatable="false" name="config_wifi_softap_ieee80211ac_supported">true</bool>
+    <bool translatable="false" name="config_wifiSoftapIeee80211axSupported">true</bool>
+    <bool translatable="false" name="config_wifiSoftap6ghzSupported">true</bool>
+    <!--<bool translatable="false" name="config_wifiSoftap60ghzSupported">true</bool> -->
+    <bool translatable="false" name="config_wifi_connected_mac_randomization_supported">true</bool>
+    <bool translatable="false" name="config_wifi_p2p_mac_randomization_supported">true</bool>
+    <bool translatable="false" name="config_wifiSaeH2eSupported">true</bool>
+    <string translatable="false" name="config_wifiSoftap5gChannelList"></string>
+    <string translatable="false" name="config_wifiSoftap6gChannelList"></string>
+    <!--<string translatable="false" name="config_wifiSoftap60gChannelList"></string> -->
+    
     <!-- boolean indicating whether or not to disable shutdown idle instance timer in the bridged mode when connected to a power source -->
     <bool name="config_wifiFrameworkSoftApDisableBridgedModeShutdownIdleInstanceWhenCharging">true</bool>
 
