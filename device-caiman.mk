@@ -8,6 +8,9 @@
 # Always use scudo for memory allocator
 PRODUCT_USE_SCUDO := true
 
+# Build Type
+ALCH3MY_BUILD_TYPE := Official
+
 # Kernel
 TARGET_LINUX_KERNEL_VERSION := 6.1
 TARGET_KERNEL_DEVICE := caimito
